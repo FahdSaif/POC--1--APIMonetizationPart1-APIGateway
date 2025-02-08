@@ -382,19 +382,76 @@ This document below provides a collection of curl commands used to interact with
 | Add Target 2 | `curl -i -X POST http://localhost:8001/upstreams/test-service-upstream/targets --data "target=192.168.1.2:80"` | Adds the second target to the upstream. Replace `192.168.1.2:80` with your server's address and port. |
 | Create Service (Load Balanced) | `curl -i -X POST http://localhost:8001/services --data "name=load-balanced-service" --data "host=test-service-upstream"` | Creates a service that uses the upstream for load balancing.  Requests to this service will be distributed across the targets in the upstream. |
 
+
+# Kong Gateway - Plugin Examples (Caching, Logging, Monitoring, IP Restriction)
+
+This document demonstrates how to configure caching, logging, monitoring, and IP restriction using Kong plugins.
+
+## Caching
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Enable Proxy Cache | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=proxy-cache" --data "config.strategy=memory"` | Enables the `proxy-cache` plugin for the `test-service` using in-memory caching.  Other strategies (e.g., `redis`) are possible. |
+
+## Logging and Monitoring
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Enable File Log | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=file-log" --data "config.path=/tmp/kong-logs.txt"` | Enables the `file-log` plugin to log API requests to the specified file. |
+| Enable Prometheus | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=prometheus"` | Enables the `prometheus` plugin to export metrics in the Prometheus format. Requires a Prometheus server to collect the metrics. |
+
+## IP Restriction
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Enable IP Restriction (Deny) | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=ip-restriction" --data "config.deny=192.168.1.0/24"` | Enables the `ip-restriction` plugin to *deny* access from the IP range `192.168.1.0/24`. |
+| Enable IP Restriction (Allow) |  `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=ip-restriction" --data "config.allow=192.168.1.0/24"` | Enables the `ip-restriction` plugin to *allow* access from the IP range `192.168.1.0/24`. |
+
+# Kong Gateway - OAuth2.0 Authentication Example
+
+This document demonstrates how to configure OAuth2.0 authentication with the Kong Gateway.
+
+## OAuth2.0 Authentication
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Enable OAuth2.0 Plugin | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=oauth2" --data "config.enable_client_credentials=true"` | Enables the `oauth2` plugin for the `test-service`.  This example uses the `client_credentials` grant type.  Other grant types are configurable. |
+
 **Explanation:**
 
-1.  The `Create Upstream` command sets up the group of backend servers.
+This command enables the `oauth2` plugin for the specified service (`test-service` in this example).  The `config.enable_client_credentials=true` setting configures the plugin to use the Client Credentials grant type. This grant type is suitable for machine-to-machine communication where a client application authenticates directly with the authorization server.
 
-2.  The `Add Target 1` and `Add Target 2` commands specify the individual backend servers that Kong will distribute traffic to.
+**Important Considerations:**
 
-3.  The `Create Service (Load Balanced)` command connects the service to the upstream, enabling load balancing.
+*   **OAuth2.0 Provider:** You'll need an OAuth2.0 provider (e.g., Auth0, Okta, Keycloak, or a custom implementation) to issue access tokens. Kong acts as the Resource Server, protecting your API.
+*   **Configuration:** The `oauth2` plugin has many configuration options.  You'll need to configure it to match your OAuth2.0 provider's settings, including:
+    *   `config.authorization_url`: The URL of the authorization server's authorization endpoint.
+    *   `config.token_url`: The URL of the authorization server's token endpoint.
+    *   `config.client_id`: The client ID registered with your OAuth2.0 provider.
+    *   `config.client_secret`: The client secret registered with your OAuth2.0 provider.
+*   **Grant Types:**  The `config.enable_client_credentials` setting controls the Client Credentials grant type.  Other grant types (e.g., Authorization Code, Implicit) are also supported but require different configuration.
+*   **Testing:**  To test the setup, you'll need to obtain an access token from your OAuth2.0 provider using the appropriate grant type and credentials. Then, include the access token in the `Authorization` header of your requests to the protected API endpoint:
 
-**Important Notes:**
+    ```bash
+    curl -i http://localhost:8000/test/posts --header "Authorization: Bearer <access_token>"
+    ```
 
-*   Replace `http://localhost:8001` with the actual address and port of your Kong Admin API.
-*   Replace the example IP addresses and ports (`192.168.1.1:80`, `192.168.1.2:80`) with the actual addresses and ports of your backend servers.
-*   After creating the service, you'll likely want to create a route to access it. A route defines how clients access the service through Kong.
+    Replace `<access_token>` with the actual access token you obtained.
+
+*   **Further Configuration:**  The OAuth2 plugin supports many advanced features, such as token introspection, refresh tokens, and scopes. Consult the Kong documentation for more details.
+
+**Example (Conceptual):**
+
+Let's imagine you have an OAuth2.0 provider at `https://auth.example.com`.  You would configure the Kong `oauth2` plugin like this (simplified):
+
+```bash
+curl -i -X POST http://localhost:8001/services/test-service/plugins \
+  --data "name=oauth2" \
+  --data "config.authorization_url=[https://auth.example.com/authorize](https://www.google.com/search?q=https://auth.example.com/authorize)" \
+  --data "config.token_url=[https://auth.example.com/token](https://www.google.com/search?q=https://auth.example.com/token)" \
+  --data "config.client_id=your_client_id" \
+  --data "config.client_secret=your_client_secret" \
+  --data "config.enable_client_credentials=true"
 
 
 **Important Notes:**
