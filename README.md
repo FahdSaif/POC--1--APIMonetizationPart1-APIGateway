@@ -53,11 +53,137 @@ Kong provides the necessary tools for API monetization:
 Start small and iterate. Begin with a simple model and a few APIs.  Expand and refine your offerings as you gain experience.  Billing system integration is often the most complex part.
 
 
+# Getting Started with Kong on Docker
+
+This guide provides a step-by-step walkthrough of setting up Kong on Docker, configuring a service and route, and adding key authentication and rate limiting plugins.
+
+## Step 1: Prerequisites (5-10 minutes)
+
+*   **Install Docker:** Kong is most easily deployed using Docker. Download Docker Desktop for macOS (or your respective operating system) from Docker's official site and follow the installation instructions. Ensure Docker is running by executing `docker --version`.
+*   **Install cURL (Optional):** macOS comes with cURL pre-installed. Test it by running `curl --version`. If not installed, you can use `brew install curl`.
+*   **Install a Text Editor (Optional):** Use VS Code, Nano, or Vim for configuration file editing.
+*   **Install Homebrew (if you don't have it):**
+    ```bash
+    /bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+    ```
+
+## Step 2: Pull and Run the Kong Docker Image (10 minutes)
+
+*   **Download Kong Gateway Docker Image:**
+    ```bash
+    docker pull kong
+    ```
+*   **Run Postgres Database (required by Kong):** Kong uses PostgreSQL.
+    ```bash
+    docker run -d --name kong-database \
+      -p 5432:5432 \
+      -e POSTGRES_USER=kong \
+      -e POSTGRES_DB=kong \
+      -e POSTGRES_PASSWORD=kong \
+      postgres:latest
+    ```
+*   **Prepare Kong Database:**
+    ```bash
+    docker run --rm \
+      --link kong-database:kong-database \
+      -e "KONG_DATABASE=postgres" \
+      -e "KONG_PG_HOST=kong-database" \
+      -e "KONG_PG_USER=kong" \
+      -e "KONG_PG_PASSWORD=kong" \
+      kong kong migrations bootstrap
+    ```
+*   **Run Kong Gateway:**
+    ```bash
+    docker run -d --name kong \
+      --link kong-database:kong-database \
+      -e "KONG_DATABASE=postgres" \
+      -e "KONG_PG_HOST=kong-database" \
+      -e "KONG_PG_USER=kong" \
+      -e "KONG_PG_PASSWORD=kong" \
+      -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
+      -e "KONG_ADMIN_ACCESS_LOG=/dev/stdout" \
+      -e "KONG_PROXY_ERROR_LOG=/dev/stderr" \
+      -e "KONG_ADMIN_ERROR_LOG=/dev/stderr" \
+      -e "KONG_ADMIN_LISTEN=0.0.0.0:8001" \
+      -p 8000:8000 \
+      -p 8443:8443 \
+      -p 8001:8001 \
+      -p 8444:8444 \
+      kong
+    ```
+*   **What Happens?:** Kong will now be running at:
+    *   Proxy URL: `http://localhost:8000` (for API requests)
+    *   Admin API: `http://localhost:8001` (for managing Kong)
+
+## Step 3: Add a Service and Route in Kong (5-10 minutes)
+
+*   **Add a Service:**
+    ```bash
+    curl -i -X POST http://localhost:8001/services \
+      --data name=test-service \
+      --data url=[https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
+    ```
+*   **Add a Route:**
+    ```bash
+    curl -i -X POST http://localhost:8001/services/test-service/routes \
+      --data "paths[]=/test"
+    ```
+*   **Test the Setup:**
+    ```bash
+    curl -i http://localhost:8000/test/posts
+    ```
+    *Expected Result:* Kong proxies the request to `https://jsonplaceholder.typicode.com/posts` and returns a JSON response.
+
+## Step 4: Add Key Authentication Plugin (5-10 minutes)
+
+*   **Enable Key Authentication Plugin:**
+    ```bash
+    curl -i -X POST http://localhost:8001/services/test-service/plugins \
+      --data "name=key-auth"
+    ```
+*   **Create a Consumer:**
+    ```bash
+    curl -i -X POST http://localhost:8001/consumers/ \
+      --data "username=test-consumer"
+    ```
+*   **Add a Key for the Consumer:**
+    ```bash
+    curl -i -X POST http://localhost:8001/consumers/test-consumer/key-auth \
+      --data "key=my-api-key"
+    ```
+*   **Test the Key Authentication:**
+    ```bash
+    curl -i http://localhost:8000/test/posts \
+      --header "apikey: my-api-key"
+    ```
+    *Expected Result:* You should see the JSON response. Without the key, the request will be denied.
+
+## Step 5: Add Rate Limiting Plugin (Optional) (5-10 minutes)
+
+*   **Enable Rate Limiting:**
+    ```bash
+    curl -i -X POST http://localhost:8001/services/test-service/plugins \
+      --data "name=rate-limiting" \
+      --data "config.minute=5"
+    ```
+*   **Test Rate Limiting:**
+    ```bash
+    for i in {1..6}; do curl -i http://localhost:8000/test/posts; done
+    ```
+    *Expected Result:* The first 5 requests succeed, and the 6th request returns HTTP 429 (Too Many Requests).
+
+## Step 6: Verify and Iterate (5-10 minutes)
+
+*   Use the Admin API (`http://localhost:8001`) to view all services, routes, and plugins.
+*   Add more services and experiment with other plugins like logging, caching, and transformations.
+
+
+
 # Kong API Management Proof Of Concept
 
 This repository contains code and resources related to a series of Steps for Testing the POC on managing APIs with Kong. The research below cover various aspects of Kong, from basic setup to advanced topics like API key management, rate limiting, and monetization.
 
-## Tutorials
+## POC Steps
 
 1. **Setting Up Kong on Docker: An Easy Guide**
    
