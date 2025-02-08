@@ -86,25 +86,25 @@ This repository contains code and resources related to a series of tutorials on 
 9. **Debugging Cron Automation: A Closer Look**  
 
    [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
+   
+9.1. **Monetizing APIs: Setting Up and Routing**  
+[![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)  
 
-
-9.1. **Monetizing APIs: Setting Up and Routing**
-    
-   [![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
 
 10. **Initial Attempts at Cron Automation on Kong**
+    [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
     
-   [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
+12. **Creating a Simple HTML Interface for APIs**
+    [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
+    
 
+14. **Casual Check-In: Testing and Updates**
+    [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
+    
 
-11. **Creating a Simple HTML Interface for APIs**
-   [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
-
-12. **Casual Check-In: Testing and Updates**
-   [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
-
-13. **Interactive Frontend for Generating API Keys**
-   [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
+16. **Interactive Frontend for Generating API Keys**
+    [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
+    
 
 
 ## Deployment with Docker
