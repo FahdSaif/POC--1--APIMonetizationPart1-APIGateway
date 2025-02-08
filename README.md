@@ -462,6 +462,16 @@ curl -i -X POST http://localhost:8001/services/test-service/plugins \
 *   The key rotation script is *very basic*. Real-world key rotation needs more logic.
 *   Use environment variables for API keys, not hardcoded values.
 
+Debugging and Health Checks
+What: Monitor the health of Kong and its services.
+Use Case: Ensure Kong and your backend services are operating normally.
+How:
+Use the /status endpoint for Kong's health checks.
+bash
+Copy
+Edit
+curl -i http://localhost:8001/status
+
 
 
 
