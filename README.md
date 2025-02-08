@@ -231,4 +231,32 @@ This document provides a collection of curl commands used to interact with the K
 
 
 
+## API Key Management
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Create a Consumer | `curl -i -X POST http://localhost:8001/consumers/ --data "username=test-user"` | Creates a consumer named "test-user" in Kong. |
+| Generate an API Key | `curl -i -X POST http://localhost:8001/consumers/test-user/key-auth --data "key=my-secret-key"` | Generates an API key for the "test-user" consumer.  *(Note: Use a cryptographically secure key in production.)* |
+| Test API with the Key | `curl -i http://localhost:8000/test/posts --header "apikey: my-secret-key"` | Tests API access using the generated key. Assumes `/test/posts` route is configured. |
+| Delete a Specific API Key | `curl -i -X DELETE http://localhost:8001/consumers/test-user/key-auth/{key-id}` | Deletes a specific API key. Replace `{key-id}` with the actual key ID. |
+| List API Keys for a Consumer | `curl -s http://localhost:8001/consumers/test-user/key-auth | jq` | Lists all API keys for "test-user" using `jq` for formatting. |
+| Automate Deletion of Old API Keys (Key Rotation) | `for key_id in $(curl -s http://localhost:8001/consumers/test-user/key-auth | jq -r '.data[].id'); do<br>  curl -i -X DELETE http://localhost:8001/consumers/test-user/key-auth/$key_id;<br>done` | Deletes *all* API keys for "test-user". **Use with extreme caution!** This is a basic example and needs modification for production. |
+
+## Rate Limiting
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Add Rate Limiting Plugin | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=5"` | Adds a rate limiting plugin to "test-service", limiting requests to 5 per minute. |
+| Test Rate Limiting | `for i in {1..6}; do<br>  curl -i http://localhost:8000/test/posts;<br>done` | Sends six requests to test rate limiting. The sixth request should be blocked. |
+
+**Important Notes:**
+
+*   Replace `http://localhost:8001` with your Kong Admin API address and port.
+*   Replace `http://localhost:8000` with your API's address and port.
+*   Ensure "test-service" and `/test/posts` are configured in Kong.
+*   The key rotation script is *very basic*. Real-world key rotation needs more logic.
+*   Use environment variables for API keys, not hardcoded values.
+
+
+
 
