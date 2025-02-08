@@ -115,69 +115,6 @@ This repository contains code and resources related to a series of tutorials on 
    [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
 
 
-*(Remember to replace the placeholder YouTube video IDs with the actual IDs from your videos.)*
-
-## Tutorials
-
-1- **Setting Up Kong on Docker: An Easy Guide**
-Learn how to set up Kong on Docker with our straightforward tutorial. This video will walk you through the initial steps of installing and configuring Kong to manage your APIs effectively.
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/Bjg1BCWrW5U.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
-
-2- **Simplifying API Management: Generating and Testing API Keys** 
-Discover how to generate and test API keys using Kong. This video covers the basics of API key creation and the importance of testing them to ensure your API's security.
-[![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
-
-3- **Managing Multiple API Keys for Testing** 
-This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.
-[![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
-
-
-4- **Managing Multiple API Keys for Testing(Check if continued...)** 
-This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.
-[![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
-
-5- **Cleaning Up: How to Delete Multiple API Keys** 
-Learn the process of deleting multiple API keys, a necessary step to maintain the cleanliness and security of your API environment.
-[![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
-
-6-**Implementing Rate Limit Policies on API Keys** 
-Watch how to apply rate limit policies to your API keys, an essential strategy to control traffic and protect your API from overuse.
-[![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
-
-7-**Debugging lesson - Bash Script Debugging for API Key Management** 
-Dive into debugging with a bash script designed to manage multiple API keys. This video offers practical tips on troubleshooting common scripting issues.
-[![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
-
-8-**Facing Challenges in Automating Cron Scripts for API Key Management** 
- some hurdles of automating cron scripts to delete duplicate API keys, including permission issues and the need for script refinement.
-[![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
-
-9- **Initial Attempts at Cron Automation on Kong** 
-This video documents our initial efforts to automate cron jobs on Kong and the challenges faced, providing a real-time learning experience.
-[![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
-
-9.1- **Debugging Cron Automation: A Closer Look** 
-Join me as we delve deeper into debugging cron automation issues, offering insights and solutions to overcome common obstacles.
-[![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
-
-10- **Monetizing APIs: Setting Up and Routing** 
-Learn how to set up a monetization strategy for your API. This video guides you through creating a monetized API and establishing proper routing.
-[![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
-
-11- **Creating a Simple HTML Interface for APIs** 
-Watch as we create a basic HTML file to interact with our API, a practical approach for visualizing and testing API functionality.
-[![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
-
-12- **Casual Check-In: Testing and Updates** 
-A light-hearted update where we check in on the API's stability and perform routine tests to ensure everything is running smoothly.
-[![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
-
-13- **Interactive Frontend for Generating API Keys** 
-Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
-[![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
-
-
-
 
 
   ## Deployment with Docker
@@ -195,9 +132,6 @@ Kong is most easily deployed using Docker.  Follow these steps to get started:
     ```
 
     This command should display the installed Docker version, confirming a successful installation.  Once Docker is running, you can proceed with deploying Kong.  (Further instructions on deploying Kong with Docker would typically follow here, such as pulling the Kong image and running a container.)
-
-
-
 
 
 
