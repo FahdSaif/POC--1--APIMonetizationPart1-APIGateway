@@ -150,20 +150,6 @@ Learn how to set up a monetization strategy for your API. This video guides you 
 
     Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
     
-# Kong API Key Management and Rate Limiting Examples
-
-This document provides examples of common operations for managing API keys and implementing rate limiting using the Kong API Gateway.
-
-## API Key Management
-
-### Create a Consumer
-
-```bash
-curl -i -X POST http://localhost:8001/consumers/ --data "username=test-user"
-
-
-
-
 
 
 ## Deployment with Docker
