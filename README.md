@@ -291,11 +291,7 @@ Kong is most easily deployed using Docker. Follow these steps to get started:
    ```bash
    docker --version
 
-   
-
-    # Kong API Commands Used
-
-This document provides a collection of curl commands used to interact with the Kong API Gateway. Each command is listed with a brief explanation of its function.
+This document below provides a collection of curl commands used to interact with the Kong API Gateway. Each command is listed with a brief explanation of its function.
 
 | Command | Explanation |
 |---------|-------------|
