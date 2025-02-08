@@ -59,7 +59,6 @@ This repository contains code and resources related to a series of tutorials on 
 ## Tutorials
 
 1. **Setting Up Kong on Docker: An Easy Guide**
-   
    [![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/Bjg1BCWrW5U.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
 3. **Simplifying API Management: Generating and Testing API Keys**
