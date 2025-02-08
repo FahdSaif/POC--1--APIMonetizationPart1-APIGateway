@@ -57,35 +57,35 @@ This repository contains code and resources related to a series of tutorials on 
 
    Learn how to set up Kong on Docker with our straightforward tutorial. This video will walk you through the initial steps of installing and configuring Kong to manage your APIs effectively.
 
-3. **Simplifying API Management: Generating and Testing API Keys**
+2. **Simplifying API Management: Generating and Testing API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
-4. **Managing Multiple API Keys for Testing**
+3. **Managing Multiple API Keys for Testing**
    
    [![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
-5. **Managing Multiple API Keys for Testing (Check if continued...)**
+4. **Managing Multiple API Keys for Testing (Check if continued...)**
    
    [![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
-6. **Cleaning Up: How to Delete Multiple API Keys**
+5. **Cleaning Up: How to Delete Multiple API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
 
-7. **Implementing Rate Limit Policies on API Keys**
+6. **Implementing Rate Limit Policies on API Keys**
     
    [![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
-8. **Debugging lesson - Bash Script Debugging for API Key Management**
+7. **Debugging lesson - Bash Script Debugging for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
-9. **Facing Challenges in Automating Cron Scripts for API Key Management**
+8. **Facing Challenges in Automating Cron Scripts for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
-10. **Debugging Cron Automation: A Closer Look**  
+9. **Debugging Cron Automation: A Closer Look**  
 
    [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
    
@@ -100,19 +100,19 @@ This repository contains code and resources related to a series of tutorials on 
 
     
 
-13. **Creating a Simple HTML Interface for APIs**  
+11. **Creating a Simple HTML Interface for APIs**  
 
     [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
     
     
 
-15. **Casual Check-In: Testing and Updates**
+12. **Casual Check-In: Testing and Updates**
     
     [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
     
     
 
-17. **Interactive Frontend for Generating API Keys**
+13. **Interactive Frontend for Generating API Keys**
     
     [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
     
