@@ -59,61 +59,47 @@ This repository contains code and resources related to a series of tutorials on 
 ## Tutorials
 
 1. **Setting Up Kong on Docker: An Easy Guide**
-   `` Learn how to set up Kong on Docker with our straightforward tutorial. This video will walk you through the initial steps of installing and configuring Kong to manage your APIs effectively.
    [![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/Bjg1BCWrW5U.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
 2. **Simplifying API Management: Generating and Testing API Keys**
-   `` Discover how to generate and test API keys using Kong. This video covers the basics of API key creation and the importance of testing them to ensure your API's security.
    [![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
 3. **Managing Multiple API Keys for Testing**
-   `` This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.
    [![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
 4. **Managing Multiple API Keys for Testing (Check if continued...)**
-   `` This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.  *(Note: This appears to be a duplicate.  Consider combining it with #3 or removing it if it's not a continuation.)*
    [![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
 5. **Cleaning Up: How to Delete Multiple API Keys**
-  ``  Learn the process of deleting multiple API keys, a necessary step to maintain the cleanliness and security of your API environment.
    [![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
 
 6. **Implementing Rate Limit Policies on API Keys**
-   `` Watch how to apply rate limit policies to your API keys, an essential strategy to control traffic and protect your API from overuse.
    [![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
 7. **Debugging lesson - Bash Script Debugging for API Key Management**
-   `` Dive into debugging with a bash script designed to manage multiple API keys. This video offers practical tips on troubleshooting common scripting issues.
    [![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
 8. **Facing Challenges in Automating Cron Scripts for API Key Management**
-   `` Explore some hurdles of automating cron scripts to delete duplicate API keys, including permission issues and the need for script refinement.
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
 9. **Initial Attempts at Cron Automation on Kong**
     [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
-   `` This video documents our initial efforts to automate cron jobs on Kong and the challenges faced, providing a real-time learning experience.
 
 9.1. **Debugging Cron Automation: A Closer Look**
 [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
-`` Join me as we delve deeper into debugging cron automation issues, offering insights and solutions to overcome common obstacles.
+
 
 10. **Monetizing APIs: Setting Up and Routing**
     [![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
-    `` Learn how to set up a monetization strategy for your API. This video guides you through creating a monetized API and establishing proper routing.
 
 12. **Creating a Simple HTML Interface for APIs**
     [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
-    `` Watch as we create a basic HTML file to interact with our API, a practical approach for visualizing and testing API functionality.
 
 13. **Casual Check-In: Testing and Updates**
     [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
-    `` A light-hearted update where we check in on the API's stability and perform routine tests to ensure everything is running smoothly.
 
 14. **Interactive Frontend for Generating API Keys**
     [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
-    `` Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
-
 
 
 
