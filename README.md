@@ -371,6 +371,32 @@ This document below provides a collection of curl commands used to interact with
 | Add Rate Limiting Plugin | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=5"` | Adds a rate limiting plugin to "test-service", limiting requests to 5 per minute. |
 | Test Rate Limiting | `for i in {1..6}; do<br>  curl -i http://localhost:8000/test/posts;<br>done` | Sends six requests to test rate limiting. The sixth request should be blocked. |
 
+
+# Kong Gateway - Load Balancing Example
+## Load Balancing
+
+| Operation | Command | Explanation |
+|---|---|---|
+| Create Upstream | `curl -i -X POST http://localhost:8001/upstreams --data "name=test-service-upstream"` | Creates an upstream named `test-service-upstream`. An upstream represents a group of backend servers. |
+| Add Target 1 | `curl -i -X POST http://localhost:8001/upstreams/test-service-upstream/targets --data "target=192.168.1.1:80"` | Adds the first target (backend server) to the upstream. Replace `192.168.1.1:80` with your server's address and port. |
+| Add Target 2 | `curl -i -X POST http://localhost:8001/upstreams/test-service-upstream/targets --data "target=192.168.1.2:80"` | Adds the second target to the upstream. Replace `192.168.1.2:80` with your server's address and port. |
+| Create Service (Load Balanced) | `curl -i -X POST http://localhost:8001/services --data "name=load-balanced-service" --data "host=test-service-upstream"` | Creates a service that uses the upstream for load balancing.  Requests to this service will be distributed across the targets in the upstream. |
+
+**Explanation:**
+
+1.  The `Create Upstream` command sets up the group of backend servers.
+
+2.  The `Add Target 1` and `Add Target 2` commands specify the individual backend servers that Kong will distribute traffic to.
+
+3.  The `Create Service (Load Balanced)` command connects the service to the upstream, enabling load balancing.
+
+**Important Notes:**
+
+*   Replace `http://localhost:8001` with the actual address and port of your Kong Admin API.
+*   Replace the example IP addresses and ports (`192.168.1.1:80`, `192.168.1.2:80`) with the actual addresses and ports of your backend servers.
+*   After creating the service, you'll likely want to create a route to access it. A route defines how clients access the service through Kong.
+
+
 **Important Notes:**
 
 *   Replace `http://localhost:8001` with your Kong Admin API address and port.
