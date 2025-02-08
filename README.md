@@ -50,33 +50,33 @@ The Kong Gateway offers a comprehensive suite of features for managing and secur
 
 [![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
 
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
 
 
 
