@@ -53,9 +53,9 @@ Kong provides the necessary tools for API monetization:
 Start small and iterate. Begin with a simple model and a few APIs.  Expand and refine your offerings as you gain experience.  Billing system integration is often the most complex part.
 
 
-# Kong API Management Tutorials
+# Kong API Management Proof Of Concept
 
-This repository contains code and resources related to a series of tutorials on managing APIs with Kong. The tutorials cover various aspects of Kong, from basic setup to advanced topics like API key management, rate limiting, and monetization.
+This repository contains code and resources related to a series of Steps for Testing the POC on managing APIs with Kong. The research below cover various aspects of Kong, from basic setup to advanced topics like API key management, rate limiting, and monetization.
 
 ## Tutorials
 
