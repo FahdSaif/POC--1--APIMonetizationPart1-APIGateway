@@ -76,7 +76,7 @@ Learn the process of deleting multiple API keys, a necessary step to maintain th
 
 6-**Implementing Rate Limit Policies on API Keys** 
 Watch how to apply rate limit policies to your API keys, an essential strategy to control traffic and protect your API from overuse.
-[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/ixoK80672ZQ.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
+[![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
 7-**Debugging lesson - Bash Script Debugging for API Key Management** 
 Dive into debugging with a bash script designed to manage multiple API keys. This video offers practical tips on troubleshooting common scripting issues.
