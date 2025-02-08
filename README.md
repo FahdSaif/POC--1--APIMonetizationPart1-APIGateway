@@ -471,28 +471,3 @@ bash
 Copy
 Edit
 curl -i http://localhost:8001/status
-
-# Setting Expiry Time for API Keys in Kong
-
-By default, Kong does not provide built-in expiration for API keys. However, this can be achieved using custom plugins, database cleanup, or rate-limiting features.  Here are three approaches:
-
-## API Key Expiry Options in Kong
-
-| Option | Description | Pros | Cons | Setup Difficulty | Automation | Example Commands |
-|---|---|---|---|---|---|---|
-| Rate-Limiting Plugin | Limits the number of requests a key can make within a time window (soft expiry). | ✅ Easy setup<br>✅ Automatic<br>✅ Encourages key rotation | ❌ Doesn't actually delete keys | Easy | Automatic | `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=10" --data "config.policy=local"` |
-| Manual Expiry + Script | Sets an expiry timestamp on the key and periodically deletes expired keys (hard expiry). | ✅ Fully removes expired keys<br>✅ Works without plugins | ❌ Requires manual cleanup or scheduled scripts | Medium | Automatable | `EXPIRY_TIME=$(date -v+7d +%s)<br>curl -i -X POST http://localhost:8001/consumers/test-user/key-auth --data "key=my-expiring-key" --data "tags[]=expiry:$EXPIRY_TIME"<br><br>`CURRENT_TIME=$(date +%s)<br>curl -s http://localhost:8001/consumers/test-user/key-auth | jq --arg now "$CURRENT_TIME" '.data[] | select(.tags[] | startswith("expiry:") and (.[7:] | tonumber) < ($now | tonumber)) | {id, key}'`<br><br>`EXPIRED_KEY_ID=$(...)<br>if [ -n "$EXPIRED_KEY_ID" ]; then<br>  curl -i -X DELETE http://localhost:8001/consumers/test-user/key-auth/$EXPIRED_KEY_ID<br>fi` |
-| Custom Lua Plugin | Implements custom logic for key expiration and deletion. | ✅ Fully automated<br>✅ Fine-grained control | ❌ Requires Lua knowledge<br>❌ Kong Enterprise/Konnect only | Hard | Fully Automatic | *(See documentation)* |
-
-**Important Notes:**
-
-*   Replace `http://localhost:8001` and `http://localhost:8000` with your actual Kong Admin API and API gateway addresses/ports.
-*   The `date -v+7d +%s` command is macOS-specific. Use the appropriate command for your operating system to calculate future timestamps.
-*   The manual expiry scripts assume you're using the `tags` field to store the expiry time. Adjust the `jq` filter if you use a different mechanism.
-*   The manual expiry scripts should be run periodically (e.g., via cron) to actually delete expired keys.
-*   The rate-limiting approach is a "soft" expiry. Keys are not deleted, but their usage is limited.  They remain in the database.
-*   The `EXPIRED_KEY_ID=$(...)` in the manual expiry section represents the more complex command to find and extract the ID, as shown in the previous examples. It's too long to comfortably fit in the table cell.  Refer to the previous responses for the full commands.
-
-
-
-
