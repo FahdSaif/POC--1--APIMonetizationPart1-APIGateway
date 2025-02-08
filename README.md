@@ -52,37 +52,50 @@ This repository contains code and resources related to a series of tutorials on 
 ## Tutorials
 
 1. **Setting Up Kong on Docker: An Easy Guide**
+   
    [![YouTube Video](https://img.youtube.com/vi/Bjg1BCWrW5U/0.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
 2. **Simplifying API Management: Generating and Testing API Keys**
+   
    [![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
 3. **Managing Multiple API Keys for Testing**
+   
    [![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
 4. **Managing Multiple API Keys for Testing (Check if continued...)**
+   
    [![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
 5. **Cleaning Up: How to Delete Multiple API Keys**
+   
    [![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
 
 6. **Implementing Rate Limit Policies on API Keys**
+    
    [![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
 7. **Debugging lesson - Bash Script Debugging for API Key Management**
+    
    [![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
 8. **Facing Challenges in Automating Cron Scripts for API Key Management**
+    
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
-9. **Initial Attempts at Cron Automation on Kong**
-   [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
+9. **Debugging Cron Automation: A Closer Look**  
 
-9.1. **Debugging Cron Automation: A Closer Look**
    [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
 
-10. **Monetizing APIs: Setting Up and Routing**
+
+9.1. **Monetizing APIs: Setting Up and Routing**
+    
    [![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
+
+10. **Initial Attempts at Cron Automation on Kong**
+    
+   [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
+
 
 11. **Creating a Simple HTML Interface for APIs**
    [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
