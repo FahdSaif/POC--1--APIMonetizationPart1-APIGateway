@@ -44,6 +44,42 @@ The Kong Gateway offers a comprehensive suite of features for managing and secur
 
 *   **Active Community:** Supported by a vibrant and active community, with regular updates, contributions, and ongoing development.
 
+
+
+
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+[![YouTube Video](https://img.youtube.com/vi/jwzZEI43c_M/0.jpg)]()
+
+
+
   ## Deployment with Docker
 
 Kong is most easily deployed using Docker.  Follow these steps to get started:
