@@ -55,35 +55,37 @@ This repository contains code and resources related to a series of tutorials on 
    
    [![YouTube Video](https://img.youtube.com/vi/Bjg1BCWrW5U/0.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
-2. **Simplifying API Management: Generating and Testing API Keys**
+   Learn how to set up Kong on Docker with our straightforward tutorial. This video will walk you through the initial steps of installing and configuring Kong to manage your APIs effectively.
+
+3. **Simplifying API Management: Generating and Testing API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
-3. **Managing Multiple API Keys for Testing**
+4. **Managing Multiple API Keys for Testing**
    
    [![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
-4. **Managing Multiple API Keys for Testing (Check if continued...)**
+5. **Managing Multiple API Keys for Testing (Check if continued...)**
    
    [![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
-5. **Cleaning Up: How to Delete Multiple API Keys**
+6. **Cleaning Up: How to Delete Multiple API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
 
-6. **Implementing Rate Limit Policies on API Keys**
+7. **Implementing Rate Limit Policies on API Keys**
     
    [![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
-7. **Debugging lesson - Bash Script Debugging for API Key Management**
+8. **Debugging lesson - Bash Script Debugging for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
-8. **Facing Challenges in Automating Cron Scripts for API Key Management**
+9. **Facing Challenges in Automating Cron Scripts for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
-9. **Debugging Cron Automation: A Closer Look**  
+10. **Debugging Cron Automation: A Closer Look**  
 
    [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
    
