@@ -165,3 +165,71 @@ Kong is most easily deployed using Docker. Follow these steps to get started:
 
    ```bash
    docker --version
+
+   
+
+    # Kong API Commands Used
+
+This document provides a collection of curl commands used to interact with the Kong API Gateway. Each command is listed with a brief explanation of its function.
+
+| Command | Explanation |
+|---------|-------------|
+| `curl -i -X GET http://<kong-gateway>/service-path --header "apikey: your_api_key"` | Sends a GET request to a Kong service with an API key in the header for authentication. |
+| `curl -i -X POST http://<kong-gateway>:8001/consumers/{consumer_id}/key-auth --data "key=unique_api_key"` | Creates an API key for a specific consumer in Kong. |
+| `curl -i -X POST http://localhost:8001/services --data "name=test-service" --data "url=https://jsonplaceholder.typicode.com"` | Creates a new service in Kong that proxies requests to the specified URL. |
+| `curl -i -X POST http://localhost:8001/services/test-service/routes --data "paths[]=/test"` | Adds a route to the test-service in Kong, allowing access via the /test path. |
+| `curl -i http://localhost:8000/test/posts` | Sends a GET request to the /test/posts endpoint through Kong. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=key-auth"` | Enables the Key Authentication plugin for the test-service. |
+| `curl -i -X POST http://localhost:8001/consumers/ --data "username=test-consumer"` | Creates a new consumer in Kong with the username test-consumer. |
+| `curl -i -X POST http://localhost:8001/consumers/test-consumer/key-auth --data "key=my-api-key"` | Assigns an API key to the test-consumer. |
+| `curl -i http://localhost:8000/test/posts --header "apikey: my-api-key"` | Sends a GET request with an API key in the header for authentication. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=5"` | Enables rate limiting for the test-service, allowing 5 requests per minute. |
+| `curl -i -X POST http://localhost:8001/upstreams --data "name=test-service-upstream"` | Creates an upstream in Kong for load balancing. |
+| `curl -i -X POST http://localhost:8001/upstreams/test-service-upstream/targets --data "target=192.168.1.1:80"` | Adds a target to the upstream for load balancing. |
+| `curl -i -X POST http://localhost:8001/services --data "name=load-balanced-service" --data "host=test-service-upstream"` | Creates a service that uses the upstream for load balancing. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=request-transformer" --data "config.add.headers=X-Custom-Header:custom_value"` | Enables the Request Transformer plugin to add custom headers to requests. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=proxy-cache" --data "config.strategy=memory"` | Enables the Proxy Cache plugin to cache API responses in memory. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=file-log" --data "config.path=/tmp/kong-logs.txt"` | Enables the File Log plugin to log API requests to a file. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=prometheus"` | Enables the Prometheus plugin to export metrics for monitoring. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=ip-restriction" --data "config.deny=192.168.1.0/24"` | Enables the IP Restriction plugin to block requests from a specific IP range. |
+| `curl -i -X POST http://localhost:8001/certificates --data "cert=@/path/to/cert.pem" --data "key=@/path/to/key.pem"` | Adds SSL certificates to Kong for secure communication. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=jwt"` | Enables the JWT plugin for token-based authentication. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=oauth2" --data "config.enable_client_credentials=true"` | Enables the OAuth2 plugin for OAuth2.0 authentication. |
+| `curl -i -X POST http://localhost:8001/services --data "name=grpc-service" --data "host=grpc-server-host" --data "protocol=grpc" --data "port=50051"` | Creates a gRPC service in Kong for proxying gRPC traffic. |
+| `curl -i -X POST http://localhost:8001/routes --data "service.id=<service-id>" --data "headers.User-Agent[]=Chrome"` | Creates a route that matches requests based on the User-Agent header. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=cors" --data "config.origins=*"` | Enables the CORS plugin to allow cross-origin requests. |
+| `curl -i http://localhost:8001/status` | Checks the health status of Kong. |
+| `curl -i -X POST http://localhost:8001/services/my-api/plugins --data "name=key-auth"` | Enables API key authentication for the my-api service. |
+| `curl -i -X POST http://localhost:8001/consumers/paid-user/key-auth` | Assigns an API key to the paid-user consumer. |
+| `curl -i -X POST http://localhost:8001/services/my-api/plugins --data "name=rate-limiting" --data "config.minute=100" --data "config.policy=local"` | Enables rate limiting for the my-api service, allowing 100 requests per minute. |
+| `curl -i -X PATCH http://localhost:8001/consumers/premium-user/plugins --data "name=rate-limiting" --data "config.minute=unlimited"` | Updates rate limiting for the premium-user to allow unlimited requests. |
+| `curl -i -X POST http://localhost:8001/services/my-api/plugins --data "name=http-log" --data "config.http_endpoint=http://your-billing-system.com/logs"` | Enables HTTP logging for the my-api service to send logs to a billing system. |
+| `curl -i -X DELETE http://localhost:8001/consumers/non-paying-user/key-auth` | Deletes the API key for the non-paying-user, revoking their access. |
+| `curl -s http://localhost:8001/plugins jq` | Lists all installed and configured plugins in Kong. |
+| `curl -s http://localhost:8001/services/YOUR_SERVICE_NAME/plugins jq` | Lists plugins configured for a specific service in Kong. |
+| `curl -s http://localhost:8001/consumers/YOUR_CONSUMER_NAME/plugins jq` | Lists plugins configured for a specific consumer in Kong. |
+| `curl -s http://localhost:8001/plugins jq '.data[] select(.name=="rate-limiting")'` | Checks if the rate-limiting plugin is installed and active. |
+| `curl -i -X POST http://localhost:8001/services/api-monetization/routes --data "paths[]=/api"` | Adds a route to the api-monetization service, allowing access via /api. |
+| `curl -i -X POST http://localhost:8001/services/api-monetization/plugins --data "name=key-auth"` | Enables API key authentication for the api-monetization service. |
+| `curl -i -X POST http://localhost:8001/consumers/test-user/key-auth` | Assigns an API key to the test-user consumer. |
+| `curl -i -X DELETE http://localhost:8001/consumers/test-user/key-auth/{old-key-id}` | Deletes an API key for the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq` | Lists all API keys for the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq '.data length'` | Counts the number of API keys for the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq '.data[] {id, key}'` | Lists all API keys with their IDs and keys for the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq '.data sort_by(.created_at) .[0].id'` | Finds the oldest API key ID for the test-user consumer. |
+| `curl -i -X DELETE http://localhost:8001/consumers/test-user/key-auth/1234-5678-9101` | Deletes the API key with the specified ID for the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq '.data[] {id, key, created_at}'` | Lists all API keys with their IDs, keys, and creation timestamps. |
+| `curl -i -X POST http://localhost:8001/consumers/test-user/key-auth --data "key=my-fixed-key"` | Assigns a specific API key to the test-user consumer. |
+| `curl -s http://localhost:8001/consumers/test-user/key-auth jq '.data[] {id, key}'` | Lists all API keys with their IDs and keys for the test-user consumer. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=5"` | Enables rate limiting for the test-service, allowing 5 requests per minute. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=key-auth"` | Enables API key authentication for the test-service. |
+| `curl -i -X POST http://localhost:8001/consumers/test-user/key-auth --data "key=my-secret-key"` | Assigns an API key to the test-user consumer. |
+| `curl -i http://localhost:8000/test/posts --header "apikey: my-secret-key"` | Sends a GET request with an API key in the header for authentication. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=rate-limiting" --data "config.minute=5"` | Enables rate limiting for the test-service, allowing 5 requests per minute. |
+| `curl -i -X POST http://localhost:8001/services/test-service/plugins --data "name=key-auth"` | Enables API key authentication for the test-service. |
+| `curl -i -X POST http://localhost:8001/consumers/test-user/key-auth --data "key=my-secret-key"` | Assigns an API key to the test-user consumer. |
+| `curl -i http://localhost:8000/test/posts --header "apikey: my-secret-key"` | Sends a GET request with an API key in the header for authentication. |
+
+
+
+
