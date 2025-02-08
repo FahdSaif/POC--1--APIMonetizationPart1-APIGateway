@@ -91,28 +91,28 @@ This repository contains code and resources related to a series of tutorials on 
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
 9. **Initial Attempts at Cron Automation on Kong**
+    [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
    This video documents our initial efforts to automate cron jobs on Kong and the challenges faced, providing a real-time learning experience.
-   [![YouTube Video](https://img.youtube.com/vi/859BHMjAyKU/0.jpg)](https://www.youtube.com/watch?v=859BHMjAyKU)
 
 9.1. **Debugging Cron Automation: A Closer Look**
-   Join me as we delve deeper into debugging cron automation issues, offering insights and solutions to overcome common obstacles.
-   [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
+[![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
+Join me as we delve deeper into debugging cron automation issues, offering insights and solutions to overcome common obstacles.
 
 10. **Monetizing APIs: Setting Up and Routing**
-   Learn how to set up a monetization strategy for your API. This video guides you through creating a monetized API and establishing proper routing.
-   [![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
+    [![YouTube Video](https://img.youtube.com/vi/O09XHPOWyX0/0.jpg)](https://www.youtube.com/watch?v=O09XHPOWyX0)
+    Learn how to set up a monetization strategy for your API. This video guides you through creating a monetized API and establishing proper routing.
 
-11. **Creating a Simple HTML Interface for APIs**
-   Watch as we create a basic HTML file to interact with our API, a practical approach for visualizing and testing API functionality.
-   [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
+12. **Creating a Simple HTML Interface for APIs**
+    [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
+    Watch as we create a basic HTML file to interact with our API, a practical approach for visualizing and testing API functionality.
 
-12. **Casual Check-In: Testing and Updates**
-   A light-hearted update where we check in on the API's stability and perform routine tests to ensure everything is running smoothly.
-   [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
+13. **Casual Check-In: Testing and Updates**
+    [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
+    A light-hearted update where we check in on the API's stability and perform routine tests to ensure everything is running smoothly.
 
-13. **Interactive Frontend for Generating API Keys**
-   Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
-   [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
+14. **Interactive Frontend for Generating API Keys**
+    [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
+    Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
 
 
 
