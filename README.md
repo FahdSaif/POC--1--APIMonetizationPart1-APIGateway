@@ -183,57 +183,60 @@ This guide provides a step-by-step walkthrough of setting up Kong on Docker, con
 
 This repository contains code and resources related to a series of Steps for Testing the POC on managing APIs with Kong. The research below cover various aspects of Kong, from basic setup to advanced topics like API key management, rate limiting, and monetization.
 
+## 💡 Watch the Explained Video 🎬  
+
 ## POC Steps
 
 1. **Setting Up Kong on Docker: An Easy Guide**
+   🎓 Learn More (Video) 📹
    
    [![YouTube Video](https://img.youtube.com/vi/Bjg1BCWrW5U/0.jpg)](https://www.youtube.com/watch?v=Bjg1BCWrW5U)
 
    Learn how to set up Kong on Docker with our straightforward tutorial. This video will walk you through the initial steps of installing and configuring Kong to manage your APIs effectively.
 
-2. **Simplifying API Management: Generating and Testing API Keys**
+3. **Simplifying API Management: Generating and Testing API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/iLfzm8b-z3E/0.jpg)](https://www.youtube.com/watch?v=iLfzm8b-z3E)
 
    Discover how to generate and test API keys using Kong. This video covers the basics of API key creation and the importance of testing them to ensure your API's security.
 
-3. **Managing Multiple API Keys for Testing**
+4. **Managing Multiple API Keys for Testing**
    
    [![YouTube Video](https://img.youtube.com/vi/bA68YOXuN64/0.jpg)](https://www.youtube.com/watch?v=bA68YOXuN64)
 
    This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.
 
-4. **Managing Multiple API Keys for Testing (Check if continued...)**
+5. **Managing Multiple API Keys for Testing (Check if continued...)**
    
    [![YouTube Video](https://img.youtube.com/vi/2dmTmxrx3Oc/0.jpg)](https://www.youtube.com/watch?v=2dmTmxrx3Oc)
 
    This tutorial will guide you on generating multiple API keys for testing purposes, showcasing how to manage and organize them efficiently.
 
-5. **Cleaning Up: How to Delete Multiple API Keys**
+6. **Cleaning Up: How to Delete Multiple API Keys**
    
    [![YouTube Video](https://img.youtube.com/vi/OiItvVAw3Lk/0.jpg)](https://www.youtube.com/watch?v=OiItvVAw3Lk)
    
    Learn the process of deleting multiple API keys, a necessary step to maintain the cleanliness and security of your API environment.
 
-6. **Implementing Rate Limit Policies on API Keys**
+7. **Implementing Rate Limit Policies on API Keys**
     
    [![YouTube Video](https://img.youtube.com/vi/ixoK80672ZQ/0.jpg)](https://www.youtube.com/watch?v=ixoK80672ZQ)
 
    Watch how to apply rate limit policies to your API keys, an essential strategy to control traffic and protect your API from overuse.
 
-7. **Debugging lesson - Bash Script Debugging for API Key Management**
+8. **Debugging lesson - Bash Script Debugging for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/z1vGLt_VY2w/0.jpg)](https://www.youtube.com/watch?v=z1vGLt_VY2w)
 
    Dive into debugging with a bash script designed to manage multiple API keys. This video offers practical tips on troubleshooting common scripting issues.
 
-8. **Facing Challenges in Automating Cron Scripts for API Key Management**
+9. **Facing Challenges in Automating Cron Scripts for API Key Management**
     
    [![YouTube Video](https://img.youtube.com/vi/7wOKrmS34L8/0.jpg)](https://www.youtube.com/watch?v=7wOKrmS34L8)
 
    some hurdles of automating cron scripts to delete duplicate API keys, including permission issues and the need for script refinement.
 
-9. **Debugging Cron Automation: A Closer Look**  
+10. **Debugging Cron Automation: A Closer Look**  
 
    [![YouTube Video](https://img.youtube.com/vi/r3o7HuV01E4/0.jpg)](https://www.youtube.com/watch?v=r3o7HuV01E4)
 
