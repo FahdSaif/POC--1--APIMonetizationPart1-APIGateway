@@ -292,8 +292,7 @@ Learn how to set up a monetization strategy for your API. This video guides you 
 
 💡 Watch the Explained Video 🎬  
 
-    
-    [![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
+[![YouTube Video](https://img.youtube.com/vi/QW8U84-ptJ4/0.jpg)](https://www.youtube.com/watch?v=QW8U84-ptJ4)
 
     A light-hearted update where we check in on the API's stability and perform routine tests to ensure everything is running smoothly.
     
@@ -303,7 +302,6 @@ Learn how to set up a monetization strategy for your API. This video guides you 
 
     💡 Watch the Explained Video 🎬
 
-    
     [![YouTube Video](https://img.youtube.com/vi/qwpmtm4vaeM/0.jpg)](https://www.youtube.com/watch?v=qwpmtm4vaeM)
 
     Explore my newly developed frontend interface that simplifies the process of generating API keys, enhancing user experience and accessibility.
