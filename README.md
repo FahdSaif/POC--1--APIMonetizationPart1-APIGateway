@@ -282,8 +282,7 @@ Learn how to set up a monetization strategy for your API. This video guides you 
 
 💡 Watch the Explained Video 🎬  
 
-
-    [![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
+[![YouTube Video](https://img.youtube.com/vi/FnqX7998bAI/0.jpg)](https://www.youtube.com/watch?v=FnqX7998bAI)
 
     Watch as we create a basic HTML file to interact with our API, a practical approach for visualizing and testing API functionality.
     
