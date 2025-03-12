@@ -1,4 +1,4 @@
-# API Monetization with Gateway (🎬 with Video Demos below)
+# POC -1 - Understanding Phase - API Monetization with Gateway (🎬 with Video walkthroughs below)
 
 This document outlines a POC for monetizing APIs using the Kong Gateway.  It covers key considerations, Kong configuration, development aspects, and business factors to help you successfully implement API monetization.Kong is open-source! The core version of Kong, known as the Kong Gateway (OSS), is freely available under the Apache 2.0 license, making it an excellent choice for developers and organizations seeking a lightweight, customizable, and community-supported API gateway.
 
