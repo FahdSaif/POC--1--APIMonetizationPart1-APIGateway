@@ -1,6 +1,6 @@
-# API Monetization with Kong Gateway (🎬 with Video Demos below)
+# API Monetization with Gateway (🎬 with Video Demos below)
 
-This document outlines a strategy for monetizing APIs using the Kong Gateway.  It covers key considerations, Kong configuration, development aspects, and business factors to help you successfully implement API monetization.Kong is open-source! The core version of Kong, known as the Kong Gateway (OSS), is freely available under the Apache 2.0 license, making it an excellent choice for developers and organizations seeking a lightweight, customizable, and community-supported API gateway.
+This document outlines a POC for monetizing APIs using the Kong Gateway.  It covers key considerations, Kong configuration, development aspects, and business factors to help you successfully implement API monetization.Kong is open-source! The core version of Kong, known as the Kong Gateway (OSS), is freely available under the Apache 2.0 license, making it an excellent choice for developers and organizations seeking a lightweight, customizable, and community-supported API gateway.
 
 
 ## Monetization Models
@@ -12,7 +12,7 @@ Several monetization models can be implemented with Kong:
 *   **Freemium:** Offer a free tier with limited access to attract users, then upsell to paid tiers.
 *   **Subscription-based:** Charge recurring fees for API access.
 
-## Kong Configuration and Plugins
+## Configuration and Plugins
 
 Kong provides the necessary tools for API monetization:
 
@@ -179,7 +179,7 @@ This guide provides a step-by-step walkthrough of setting up Kong on Docker, con
 
 
 
-# Live Videos below - Kong API Management Proof Of Concept
+# Live Videos below - API Management Proof Of Concept
 
 This repository contains code and resources related to a series of Steps for Testing the POC on managing APIs with Kong. The research below cover various aspects of Kong, from basic setup to advanced topics like API key management, rate limiting, and monetization.
 
@@ -187,7 +187,7 @@ This repository contains code and resources related to a series of Steps for Tes
 
 ## POC Steps
 
-1. **Setting Up Kong on Docker: An Easy Guide**
+1. **Setting Up the gateway on Docker: An Easy Guide**
    
    💡 Watch the Explained Video 🎬
    
